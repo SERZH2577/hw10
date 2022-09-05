@@ -1,0 +1,30 @@
+{
+  "name": "NAME_REOPSITORY_NAME",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://serzh2577.github.io/NAME_REOPSITORY_NAME",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /NAME_REOPSITORY_NAME/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serzh2577/NAME_REOPSITORY_NAME.git"
+  },
+  "keywords": [],
+  "author": "eliarr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/serzh2577/NAME_REOPSITORY_NAME/issues"
+  },
+  "dependencies": {
+    "modern-normalize": "^1.1.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
