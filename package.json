@@ -1,24 +1,26 @@
 {
-  "name": "NAME_REOPSITORY_NAME",
+  "name": "hw10",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://serzh2577.github.io/NAME_REOPSITORY_NAME",
+  "homepage": "https://serzh2577.github.io/hw10",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /NAME_REOPSITORY_NAME/"
+    "build": "parcel build src/*.html --public-url /hw10/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/serzh2577/NAME_REOPSITORY_NAME.git"
+    "url": "git+https://github.com/serzh2577/hw10.git"
   },
   "keywords": [],
   "author": "eliarr",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/serzh2577/NAME_REOPSITORY_NAME/issues"
+    "url": "https://github.com/serzh2577/hw10/issues"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0"
+    "lodash.debounce": "^4.0.8",
+    "modern-normalize": "^1.1.0",
+    "notiflix": "^3.2.5"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.7.0",
