@@ -1,29 +1,10 @@
-import Notiflix from 'notiflix';
+const BASE_URL = `https://restcountries.com/v3.1`;
 
-export function fetchCountries(e) {
-  const URL = `https://restcountries.com/v3.1`;
-  // console.log(e.currentTarget.elements.value);
-  // console.log(e.target.value);
-
-  fetch(`${URL}/name/${e.target.value}`)
-    .then(result => result.json())
-    .then(result => {
-      result.map(el => console.log(el.name.official));
-
-      if (result.length > 10) {
-        Notiflix.Notify.info(
-          'Too many matches found. Please enter a more specific name'
-        );
-      } else if (result.length < 1) {
-        Notiflix.Notify.failure('Oops, there is no country with that name');
-      }
-    })
-    .catch(
-      error => Notiflix.Notify.failure(`${error}`)
-      // {
-      // if (error || undefined) {
-      //   Notiflix.Notify.failure('Oops, there is no country with that name');
-      // }
-      // }
-    );
+export function fetchCountries(elem) {
+  return fetch(`${BASE_URL}/name/${elem.target.value}`).then(result => {
+    if (!result.ok) {
+      return result.json().then(error => Promise.reject(error));
+    }
+    return result.json();
+  });
 }
